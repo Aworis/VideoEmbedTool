@@ -1,0 +1,85 @@
+main {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    background: #fff;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 25px;
+    padding: 22px 0;
+    text-align: center;
+}
+
+.embed-logo {
+    text-align: center;
+}
+
+.embed-logo img {
+    width: 100px;
+}
+
+p {
+    padding-bottom: 45px;
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+#tool-form {
+    padding-bottom: 22px;
+    width: 740px;
+    margin: 0 auto;
+}
+
+#input-group {
+    display: table;
+    width: 100%;
+}
+
+#video-input {
+    width: calc( 100% - 140px );
+}
+
+#button{
+    margin: 0 0 0 -1px;
+    width: 140px;
+    color: #fff;
+    background: #009ee0;
+}
+
+input {
+    border: #009ee0 solid 1px;
+    display: table-cell;
+    line-height: 2;
+}
+
+#embed-code {
+    margin: 0 auto;
+    display: block;
+    width: 740px;
+}
+
+@media (max-width: 779px) {
+    #tool-form {
+        width: 100%;
+    }
+
+    #embed-code {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Styles to center Facebook posts in the Facebook embed tool. Facebook posts are at least 350 px wide. */
+.fb-post span{
+    margin: 0 auto!important;
+    display: block!important;
+}
+
+@media (max-width: 390px) {
+    #video-div {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+    }
+}

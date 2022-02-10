@@ -1,0 +1,119 @@
+main {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    background: #fff;
+    padding: 20px 20px 40px;
+}
+
+h1 {
+    font-size: 35px;
+    padding: 22px 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/* Grid Layout */
+.app-list {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.app-item {
+    height: 95px;
+}
+
+.app-item a {
+    padding: 15px;
+    display: block;
+    height: 95px;
+    line-height: 64px;
+    text-overflow: ellipsis;
+    width: calc(940px / 3);
+    white-space: nowrap;
+    overflow:hidden;
+    border-bottom: none;
+}
+
+.icon {
+    font-size: 35px;
+    margin-right: 5px;
+    vertical-align: middle;
+    height: 64px;
+    color: #009ee0;
+}
+
+.icon::before {
+    vertical-align: -35%;
+}
+
+
+/* App item tile */
+.app-item a:hover {
+    background-color: #e6f2fb;
+    overflow: visible;
+    white-space: normal;
+    width: auto;
+    height: auto;
+    color: #1e2b46;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.1);
+    transition: .3s;
+}
+
+li:focus,
+li:hover,
+li:active {
+    z-index: 1;
+}
+
+.app-item a p {
+    line-height: 15px;
+    font-size: 13px;
+    margin-top: -15px;
+    margin-left: 53.75px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+/* Mobile Tablet */
+@media (max-width: 1000px) {
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    .app-list {
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .app-item a {
+        width: 270px;
+        margin: 0 auto;
+    }
+}
+
+
+/* Mobile Smartphone */
+@media (max-width: 589px) {
+    main {
+    padding: 0px;
+    }
+
+    .app-list {
+    display:block;
+    grid-template-columns: none;
+    }
+
+    .app-item a {
+    width: 100%;
+    margin: 0;
+    }
+
+    li:focus,
+    li:hover,
+    li:active {
+        position: absolute;
+    }
+}
